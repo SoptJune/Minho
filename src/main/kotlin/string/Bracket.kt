@@ -1,8 +1,6 @@
 package string
 
-
-
-fun main(){
+fun main() {
     repeat(readln().toInt()) {
         println(validityCheckBracket(readln()))
     }

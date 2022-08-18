@@ -1,6 +1,5 @@
 package string
 
-
 fun main() {
     val (N, M) = readln().split(' ').map { it.toInt() }
     val arrayN = ArrayList<String>()
@@ -15,9 +14,9 @@ fun main() {
     val directoryM = arrayM.groupBy { it }
     val newArray = if (N > M) directoryM.filter { findValue ->
         findValue.value == directoryN[findValue.key]
-    }.toSortedMap()else directoryN.filter { findValue ->
-            findValue.value == directoryM[findValue.key]
-        }.toSortedMap()
+    }.toSortedMap() else directoryN.filter { findValue ->
+        findValue.value == directoryM[findValue.key]
+    }.toSortedMap()
     println(newArray.size)
     println(newArray.keys.joinToString("\n"))
 }
