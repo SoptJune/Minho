@@ -24,7 +24,7 @@ fun main() {
         if (n == 0 && m == 0) break
         var treeCount = 0
         vertex = BooleanArray(501)
-        for (i in 0..n) {
+        for (i in 1..n) {
             graph[i] = LinkedList<Int>()
         }
         //Initialize Value
