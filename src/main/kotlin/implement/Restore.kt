@@ -31,7 +31,7 @@ fun main() {
                     }
                 }
             }
-        }else{
+        } else {
             i--
         }
     }
