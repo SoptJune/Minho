@@ -8,11 +8,11 @@ var N = 0
 var totalProbability = 0.0
 
 fun main() {
-    var visitMap = Array(30) { BooleanArray(30) }
-    visitMap[15][15] = true
+    var visitMap = Array(29) { BooleanArray(29) }
+    visitMap[14][14] = true
     readln().split(" ")
         .mapIndexed { index, s -> if (index == 0) N = s.toInt() else fourWayDirection[index - 1] = s.toDouble() * 0.01 }
-    DFS(0, 15, 15, visitMap, 1.0)
+    DFS(0, 14, 14, visitMap, 1.0)
     println(totalProbability)
 }
 
@@ -25,7 +25,7 @@ fun DFS(cnt: Int, currentX: Int, currentY: Int, visited: Array<BooleanArray>, cu
         if (fourWayDirection[i] == 0.0) continue
         val dx = currentX + intRangeX[i]
         val dy = currentY + intRangeY[i]
-        if (dx < 1 || dy < 1 || dx > 29 || dy > 29) continue
+        if (dx < 0 || dy < 0 || dx > 28 || dy > 28) continue
         if (!visited[dx][dy]) {
             visited[dx][dy] = true
             DFS(cnt + 1, dx, dy, visited, cumulativeResult * fourWayDirection[i])
