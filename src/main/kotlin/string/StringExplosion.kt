@@ -28,9 +28,6 @@ fun main() {
             }
         }
     }
-    stack.forEach {
-        answer.append(it)
-    }
-    if (answer.isNotEmpty()) bw.write(answer.toString()) else bw.write("FRULA")
+    if (stack.isNotEmpty()) bw.write(stack.joinToString("")) else bw.write("FRULA")
     bw.close()
 }
