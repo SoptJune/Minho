@@ -1,8 +1,6 @@
 package bruteforce
 
 
-val intRangeX = intArrayOf(0, 0, 1, -1)
-val intRangeY = intArrayOf(1, -1, 0, 0)
 val fourWayDirection = DoubleArray(4)
 var N = 0
 var totalProbability = 0.0
@@ -17,6 +15,9 @@ fun main() {
 }
 
 fun DFS(cnt: Int, currentX: Int, currentY: Int, visited: Array<BooleanArray>, cumulativeResult: Double) {
+
+    val intRangeX = intArrayOf(0, 0, 1, -1)
+    val intRangeY = intArrayOf(1, -1, 0, 0)
     if (cnt == N) {
         totalProbability += cumulativeResult
         return
