@@ -4,7 +4,7 @@ enum class Number(val select: Int) {
     A(0), E(1), I(2), O(3), U(4)
 }
 fun main() {
-    print(solution("EIO"))
+    solution("AAAAE")
 }
 val distance = listOf(5, 25, 125, 625, 3125)
 
