@@ -13,32 +13,11 @@ fun solution(word: String): Int = when (word.length) {
         if (word == "A") 1
         else Number.valueOf(word).select * 781 + 1
     }
-    2 -> {
-        word.mapIndexed { index, c ->
-            if (c == 'A') 1
-            else 3905 / distance[index] * Number.valueOf(c.toString()).select + 1
-        }.sum()
-    }
-    3 -> {
-        word.mapIndexed { index, c ->
-            if (c == 'A') 1
-            else 3905 / distance[index] * Number.valueOf(c.toString()).select + 1
-        }.apply { println(this.toString()) }.sum()
-    }
-    4 -> {
-        word.mapIndexed { index, c ->
-            if (c == 'A') 1
-            else 3905 / distance[index] * Number.valueOf(c.toString()).select + 1
-        }.sum()
-    }
-    5 -> {
-        word.mapIndexed { index, c ->
-            if (c == 'A') 1
-            else 3905 / distance[index] * Number.valueOf(c.toString()).select + 1
-        }.sum()
-    }
     else -> {
-        0
+        word.mapIndexed { index, c ->
+            if (c == 'A') 1
+            else 3905 / distance[index] * Number.valueOf(c.toString()).select + 1
+        }.sum()
     }
 }
 /*
