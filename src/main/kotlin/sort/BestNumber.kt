@@ -8,7 +8,7 @@ fun solution(numbers: IntArray): String {
     val comparator = Comparator<String> { o1, o2 ->
         (o2 + o1).compareTo(o1 + o2)
     }
-    if(numbers.all { it ==0 }) return "0"
+    if(numbers.all { it == 0 }) return "0"
     return numbers.map { it.toString() }.sortedWith(comparator).joinToString("")
 }
 
