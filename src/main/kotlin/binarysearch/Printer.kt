@@ -9,9 +9,8 @@ fun solution(priorities: IntArray, location: Int): Int {
     var indexQueue = 0
     var answer = 0
     val queue = priorities.mapIndexed { index, i -> Pair(i, index) }.toMutableList()
-    val findValue = queue[location]
     while (true) {
-        if (findValue == queue[indexQueue] && queue.maxOfOrNull { it.first } == queue[indexQueue].first) {
+        if (location == queue[indexQueue].second && queue.maxOfOrNull { it.first } == queue[indexQueue].first) {
             answer++
             break
         } else if (queue.maxOfOrNull { it.first } == queue[indexQueue].first) {
