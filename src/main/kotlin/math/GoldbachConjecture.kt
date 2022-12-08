@@ -1,5 +1,9 @@
 package math
 
+/*
+    백준 6588번 골드바흐의 추측 (실버 1)
+ */
+
 fun main() {
     val primeMap = BooleanArray(1_000_001)
     primeMap[1] = true
