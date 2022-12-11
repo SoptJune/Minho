@@ -1,6 +1,9 @@
 package dynamic
 
 import kotlin.math.min
+/*
+    백준 RGB거리 (실버 1)
+ */
 
 fun main() {
     val N = readln().toInt()

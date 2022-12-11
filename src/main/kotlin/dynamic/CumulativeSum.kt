@@ -3,6 +3,10 @@ package dynamic
 import java.io.BufferedWriter
 import java.io.OutputStreamWriter
 
+/*
+    백준 구간 합 구하기4 (실버 3)
+ */
+
 fun main() {
     val (N, M) = readln().split(" ").map { it.toInt() }
     val bw = BufferedWriter(OutputStreamWriter(System.out))

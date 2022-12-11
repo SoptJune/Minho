@@ -2,6 +2,10 @@ package dynamic
 
 import kotlin.math.max
 
+/*
+    백준 계단 오르기 (실버 3)
+ */
+
 fun main() {
     val stair = mutableListOf<Int>()
     val N = readln().toInt()
