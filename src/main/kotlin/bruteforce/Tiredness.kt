@@ -2,7 +2,7 @@ package bruteforce
 
 import java.util.PriorityQueue
 
-var max :Int = 0
+private var max :Int = 0
 private lateinit var visitMap:BooleanArray
 private lateinit var map:List<Pair<Int,Int>>
 fun main() {
@@ -14,7 +14,7 @@ fun main() {
     )
 }
 
-fun solution(k: Int, dungeons: Array<IntArray>): Int {
+private fun solution(k: Int, dungeons: Array<IntArray>): Int {
 
     visitMap = BooleanArray(dungeons.size)
     map = dungeons.map { dungeon ->

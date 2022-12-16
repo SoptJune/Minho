@@ -2,10 +2,10 @@ package bruteforce
 
 
 fun main() {
-    println(solution2(arrayOf("frodo", "fradi", "crodo", "abc123", "frodoc"), arrayOf("*rodo", "*rodo", "******")))
+    println(solution(arrayOf("frodo", "fradi", "crodo", "abc123", "frodoc"), arrayOf("*rodo", "*rodo", "******")))
 }
 
-fun solution2(user_id: Array<String>, banned_id: Array<String>): Int {
+private fun solution(user_id: Array<String>, banned_id: Array<String>): Int {
     var answer = 1
 
     var badUserMap: Map<String, List<String>>

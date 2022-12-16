@@ -4,7 +4,7 @@ fun main() {
     search("foobar")
 }
 
-fun search(s: String): IntArray {
+private fun search(s: String): IntArray {
     val answer = IntArray(s.length)
     val map = mutableSetOf<Pair<Char, Int>>()
     s.forEachIndexed { index, c ->

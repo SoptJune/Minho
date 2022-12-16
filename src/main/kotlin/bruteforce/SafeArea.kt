@@ -3,12 +3,12 @@ package bruteforce
 import java.lang.Integer.max
 
 
-val intRangeX = intArrayOf(0, 0, 1, -1)
-val intRangeY = intArrayOf(1, -1, 0, 0)
-val Num = readln().toInt()
-val arr = ArrayList<List<Int>>()
-var maxCount = 1
-var myMap = Array(Num) { BooleanArray(Num) }
+private val intRangeX = intArrayOf(0, 0, 1, -1)
+private val intRangeY = intArrayOf(1, -1, 0, 0)
+private val Num = readln().toInt()
+private val arr = ArrayList<List<Int>>()
+private var maxCount = 1
+private var myMap = Array(Num) { BooleanArray(Num) }
 fun main() {
     var maxHeight = 0
     repeat(Num) {

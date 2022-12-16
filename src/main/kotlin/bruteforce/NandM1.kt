@@ -3,7 +3,7 @@ package bruteforce
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
-fun combination(data: MutableList<Int>, list: List<Int>, state: Array<Boolean>, start: Int, m: Int, n: Int) {
+private fun combination(data: MutableList<Int>, list: List<Int>, state: Array<Boolean>, start: Int, m: Int, n: Int) {
     if (m == start) {
         println(data.joinToString(" "))
     } else {

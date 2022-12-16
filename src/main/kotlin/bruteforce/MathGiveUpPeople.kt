@@ -1,10 +1,10 @@
 package bruteforce
 
 fun main() {
-    println(solution2(intArrayOf(1,2,3,3,2)).toList())
+    println(solution(intArrayOf(1,2,3,3,2)).toList())
 }
 
-private fun solution2(answers: IntArray): IntArray {
+private fun solution(answers: IntArray): IntArray {
     val person1 = arrayOf(1, 2, 3, 4, 5)
     var person1Count = 0
     val person2 = arrayOf(1, 3, 4, 5)

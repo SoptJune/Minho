@@ -1,8 +1,5 @@
 package bruteforce
 
-import graph.ans
-import kotlin.math.min
-
 fun main() {
     /*println(
         solution(
@@ -38,7 +35,7 @@ fun main() {
     )
 }
 
-fun solution(gems: Array<String>): IntArray {
+private fun solution(gems: Array<String>): IntArray {
     val answer = gems.toSet()
     val transform = HashMap<String, Int>()
 
