@@ -25,7 +25,7 @@ private operator fun String.minus(s: String): Boolean =
     }.length == s.length-1
 
 
-fun solution(begin: String, target: String, words: Array<String>): Int {
+private fun solution(begin: String, target: String, words: Array<String>): Int {
     if (!words.contains(target)) return 0
     wordList = words
     targetString = target
@@ -37,7 +37,7 @@ fun solution(begin: String, target: String, words: Array<String>): Int {
     return maxCount
 }
 
-fun dfs(index: Int, count: Int) {
+private fun dfs(index: Int, count: Int) {
     if (wordList[index] == targetString) {
         maxCount = if (maxCount == 0) {
             count
