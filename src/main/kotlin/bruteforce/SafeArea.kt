@@ -34,7 +34,7 @@ fun main() {
     print(maxCount)
 }
 
-fun search(currentX: Int, currentY: Int, level: Int) {
+private fun search(currentX: Int, currentY: Int, level: Int) {
 
     for (i in 0 until 4) {
         val dx = currentX + intRangeX[i]
