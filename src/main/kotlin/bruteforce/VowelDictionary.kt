@@ -1,14 +1,14 @@
 package bruteforce
 
-enum class Number(val select: Int) {
+private enum class Number(val select: Int) {
     A(0), E(1), I(2), O(3), U(4)
 }
 fun main() {
     solution("AAAAE")
 }
-val distance = listOf(5, 25, 125, 625, 3125)
+private val distance = listOf(5, 25, 125, 625, 3125)
 
-fun solution(word: String): Int = when (word.length) {
+private fun solution(word: String): Int = when (word.length) {
     1 -> {
         if (word == "A") 1
         else Number.valueOf(word).select * 781 + 1

@@ -1,9 +1,9 @@
 package bruteforce
 
 
-val fourWayDirection = DoubleArray(4)
-var N = 0
-var totalProbability = 0.0
+private val fourWayDirection = DoubleArray(4)
+private var N = 0
+private var totalProbability = 0.0
 
 fun main() {
     var visitMap = Array(29) { BooleanArray(29) }
@@ -14,7 +14,7 @@ fun main() {
     println(totalProbability)
 }
 
-fun DFS(cnt: Int, currentX: Int, currentY: Int, visited: Array<BooleanArray>, cumulativeResult: Double) {
+private fun DFS(cnt: Int, currentX: Int, currentY: Int, visited: Array<BooleanArray>, cumulativeResult: Double) {
 
     val intRangeX = intArrayOf(0, 0, 1, -1)
     val intRangeY = intArrayOf(1, -1, 0, 0)
