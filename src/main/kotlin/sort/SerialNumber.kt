@@ -1,5 +1,9 @@
 package sort
 
+/*
+    백준 1431번 (시리얼 넘버)
+    단순 정렬
+ */
 fun main() {
     val N = readln().toInt()
     val array = mutableListOf<String>()

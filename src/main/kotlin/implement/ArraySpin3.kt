@@ -1,5 +1,10 @@
 package implement
 
+/*
+    백준 16935번 (배열 돌리기 3)
+    배열 돌리는거 필요하면 여기꺼 참고
+
+ */
 fun main() {
     val (N, M, R) = readln().split(" ").map { it.toInt() }
     var array = List(N) { mutableListOf<Int>() }

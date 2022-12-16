@@ -5,6 +5,10 @@ import java.io.OutputStreamWriter
 
 /*
     백준 구간 합 구하기4 (실버 3)
+    DP문제
+    이건 쉬웠음
+    처음부터 끝까지 누적합 구해놓고
+    특정 구간에 i, j 대해서 누적합[j] - 누적합[i]하면 구간의 합 나온다.
  */
 
 fun main() {

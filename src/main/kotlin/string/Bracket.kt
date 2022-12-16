@@ -1,5 +1,9 @@
 package string
 
+/*
+    백준 9012번 (괄호)
+    Stack 문제
+ */
 fun main() {
     repeat(readln().toInt()) {
         println(validityCheckBracket(readln()))

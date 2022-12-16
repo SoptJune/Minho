@@ -4,6 +4,16 @@ import java.util.LinkedList
 import kotlin.math.abs
 import kotlin.math.min
 
+/*
+    프로그래머스 전력망 둘로 나누기
+    BFS 풀이 이차원 배열로 그래프 풀이
+    n	    wires	                                        result
+    9	[[1,3],[2,3],[3,4],[4,5],[4,6],[4,7],[7,8],[7,9]]	3
+    result는 잘린 2개의 트리의 노드의 갯수의 최소 값
+    연결 하나씩 끊어보고 BFS 돌려본다.
+    시작 점을 true로 박아버리는게 중요, 그래야 떨거지 노드들도 검사하니깐
+ */
+
 private lateinit var visitMap: BooleanArray
 private lateinit var map: Array<BooleanArray>
 fun main() {

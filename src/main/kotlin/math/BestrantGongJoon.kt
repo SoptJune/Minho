@@ -7,6 +7,8 @@ import kotlin.math.sqrt
 /*
     백준 4948번 "베르트랑 공준" ( 실버 2 )
     https://www.acmicpc.net/problem/4948
+    n보다 크고 2n보다 작은 소수의 개수 출력
+    에네토스체네스의 체?
  */
 
 fun main() {

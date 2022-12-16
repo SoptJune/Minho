@@ -1,4 +1,8 @@
 package implement
+/*
+    배열 복구
+    어디에서 풀었는지 모르겠는데
+ */
 
 fun main() {
     val (H, W, X, Y) = readln().split(" ").map { it.toInt() }

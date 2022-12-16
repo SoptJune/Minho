@@ -2,7 +2,9 @@ package implement
 
 import java.io.BufferedWriter
 import java.io.OutputStreamWriter
-
+/*
+    뭔지 모르겠음
+ */
 
 val array = ArrayList<String>()
 

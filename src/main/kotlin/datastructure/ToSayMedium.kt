@@ -3,7 +3,12 @@ package datastructure
 import java.io.BufferedWriter
 import java.io.OutputStreamWriter
 import java.util.*
-
+/*
+    백준 1655번 (가운데를 말해요)
+    우선순위 큐 (최대 힙, 최소 힙)
+    설명은 여기가 최고
+    https://regularmember.tistory.com/142
+ */
 
 fun main() {
     val N = readln().toInt()

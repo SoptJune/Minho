@@ -1,4 +1,10 @@
 package binarysearch
+/*
+    백준 나무 자르기 (2805번)
+    높이를 mid로 이분탐색 했다.
+    높이에 따라서 해당 높이-그 나무 높이만큼 잘린다.
+    mid보다 크면 높이 더 올리고, 작으면 높이 더 줄여본다.
+ */
 
 fun main() {
     val (N, M) = readln().split(" ").map { it.toInt() }

@@ -2,6 +2,10 @@ package string
 
 import java.io.BufferedReader
 import java.io.InputStreamReader
+/*
+    부분 문자열
+    KMP 씀
+ */
 
 fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
     val S = readln()

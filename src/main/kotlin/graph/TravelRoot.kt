@@ -1,21 +1,14 @@
 package graph
 
+/*
+    프로그래머스 여행 경로
+    DFS 풀이, 리스트 풀이
+    ICN 공항에서 모든 공항 경로를 이동할 때 그 경로를 출력
+    ICN에서 시작하는 경우들을 다 시작으로 DFS 돌려봄
+    보낼 때 Start를 기입, 끝까지 갔을 때 end까지 더해서 경로 넣어버리기~
+ */
+
 fun main() {
-    /*solution(arrayOf(arrayOf("ICN", "JFK"), arrayOf("HND", "IAD"), arrayOf("JFK", "HND"))).forEach {
-        println(it.toString())
-    }*/
-    println()
-    /*solution(
-        arrayOf(
-            arrayOf("ICN", "SFO"),
-            arrayOf("ICN", "ATL"),
-            arrayOf("ATL", "SFO"),
-            arrayOf("ATL", "ICN"),
-            arrayOf("SFO", "ATL"),
-        )
-    ).forEach {
-        println(it)
-    }*/
     solution(
         arrayOf(
             arrayOf("ICN", "AAA"),
@@ -27,31 +20,6 @@ fun main() {
     ).forEach {
         println(it)
     }
-    /*solution(
-        arrayOf(
-            arrayOf("ICN", "A"),
-            arrayOf("A", "B"),
-            arrayOf("A", "C"),
-            arrayOf("C", "A"),
-            arrayOf("B", "D"),
-        )
-    ).forEach {
-        println(it)
-    }*/
-    println()
-    /*println(
-        solution(
-            arrayOf(
-                arrayOf("ICN", "AAA"),
-                arrayOf("ICN", "CCC"),
-                arrayOf("CCC", "DDD"),
-                arrayOf("AAA", "BBB"),
-                arrayOf("AAA", "BBB"),
-                arrayOf("DDD", "ICN"),
-                arrayOf("BBB", "AAA"),
-            )
-        ).toList()
-    )*/
 }
 
 var answerRoot: Array<String>? = null

@@ -1,5 +1,13 @@
 package bruteforce
 
+/*
+    백준 미친 로봇 (1405번)
+    DFS 풀이, 2차원 배열
+    단순한 경로로 이동할 확률을 구하라고 한다 ㅋㅋㅋ
+    이거 내 기억엔 빡셌으나 지금 보니 쉽네
+    방문한 곳 True 해놓고 끝까지 N번 이동 시켰을 때
+    방문하지 않은 곳으로만 여행한 친구들의 확률을 더한다.
+ */
 
 private val fourWayDirection = DoubleArray(4)
 private var N = 0

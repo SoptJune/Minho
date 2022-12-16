@@ -1,5 +1,14 @@
 package bruteforce
 
+/*
+    백준 1107번 리모컨
+    HashSet 이용
+    고장난 버튼이 있을 때 채널 100번에서부터 원하는 채널로 이동하려면 몇 번 눌러야하는지
+    100번과 가깝다면 그냥 + - 버튼 누르는게 낫다.
+    나머지는 완전 탐색, 근데 이거 개빡세게 했네 ㅋㅋㅋ 나도 해석이 안 된다 ㅋㅋ
+ */
+
+
 import java.io.BufferedWriter
 import java.io.OutputStreamWriter
 import java.lang.Math.abs

@@ -2,6 +2,15 @@ package bruteforce
 
 import java.util.PriorityQueue
 
+/*
+    프로그래머스 피로도
+    k	dungeons	                result
+    80	[[80,20],[50,40],[30,10]]	3
+    던전 탐험 최대 갯수 출력
+    dungeons 돌리면서 피로도 되는건 dfs 돌려본다.
+    max 처리 해서 저장하면 끝
+ */
+
 private var max :Int = 0
 private lateinit var visitMap:BooleanArray
 private lateinit var map:List<Pair<Int,Int>>
@@ -39,32 +48,4 @@ fun findTiredNess(k: Int, index: Int, count: Int) {
     }
     max = max.coerceAtLeast(count)
     visitMap[index] = false
-}
-
-fun solution2(k: Int, dungeons: Array<IntArray>): Int {
-    val map = dungeons.map { dungeon ->
-        dungeon[0] to dungeon[1]
-    }.filter { it.first <= k }
-    var count = 0
-    val pq = PriorityQueue<Pair<Int, Int>>(Comparator { o1, o2 -> o1.second - o2.second })
-    var maxTried = 0
-    var sumTried = 0
-    var currentK = k
-    map.forEach {
-        if (it.first <= currentK) {
-            pq.offer(it)
-            maxTried = maxTried.coerceAtLeast(it.first)
-            sumTried += it.second
-            if (sumTried >= currentK) {
-                val value = pq.poll()
-                count++
-                currentK -= value.second
-                sumTried -= value.second
-                maxTried = if (maxTried < value.first) pq.maxOf { it.first } else maxTried
-                pq.removeIf { it.first > currentK }
-            }
-        }
-    }
-    count += pq.size
-    return count
 }

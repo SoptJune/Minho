@@ -1,5 +1,8 @@
 package bruteforce
 
+/*
+    이거 못 품,,
+ */
 
 fun main() {
     println(solution(arrayOf("frodo", "fradi", "crodo", "abc123", "frodoc"), arrayOf("*rodo", "*rodo", "******")))

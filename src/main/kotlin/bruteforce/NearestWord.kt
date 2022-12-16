@@ -1,4 +1,8 @@
 package bruteforce
+/*
+    프로그래머스 가장 가까운 글자
+    뭐 없음
+ */
 
 fun main() {
     search("foobar")

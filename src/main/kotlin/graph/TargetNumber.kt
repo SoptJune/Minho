@@ -1,5 +1,10 @@
 package graph
 
+/*
+    프로그래머스 타겟넘버
+    +했을 때, - 했을 때로 완전탐색 돌려서 Target이 되는 경우에만 count++
+ */
+
 private var sum = 0
 private var count = 0
 private lateinit var numberList: IntArray

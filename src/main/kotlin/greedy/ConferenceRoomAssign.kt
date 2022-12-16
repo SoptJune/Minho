@@ -1,4 +1,10 @@
 package greedy
+/*
+    백준 1931번
+    그리디 풀이, 정렬 후 그리디
+    대표적인 그리디
+    끝나는 시간 -> 시작하는 시간 순으로 정렬
+ */
 
 fun main() {
     val n = readln().toInt()

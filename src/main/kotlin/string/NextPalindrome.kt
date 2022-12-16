@@ -1,6 +1,10 @@
 package string
 
 import java.math.BigInteger
+/*
+    백준 1334번 (다음 팰린드롭 수)
+    어떤 숫자 + 1 부터 가장 작은 팰린드롭 수를 출력
+ */
 
 var N = readln().toBigInteger().plus(BigInteger.ONE).toString().map {
     it.digitToInt()

@@ -2,6 +2,11 @@ package bruteforce
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
+/*
+    백준 2309번 일곱 난쟁이
+    100이 되는 일곱 난쟁이를 찾아서 오름차순으로 출력하는 것
+    별 거 없다.
+ */
 fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
     val data = ArrayList<Int>()
     for (i in 1..9) {

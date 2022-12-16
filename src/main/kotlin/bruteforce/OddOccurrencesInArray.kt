@@ -1,5 +1,9 @@
 package bruteforce
 
+/*
+    Codility OddOccurrences In Array 문제, 뭐 없음
+ */
+
 fun main() {
     println(solution(intArrayOf(-1,-3)))
 }

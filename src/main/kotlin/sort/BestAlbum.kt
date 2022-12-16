@@ -1,4 +1,9 @@
 package sort
+/*
+    프로그래머스 베스트 앨범
+    정렬 풀이
+    Comparator 가 중요했음
+ */
 
 fun main() {
     solution(arrayOf("classic", "pop", "classic", "classic", "pop"), intArrayOf(500, 600, 150, 800, 2500))

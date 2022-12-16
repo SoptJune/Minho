@@ -2,6 +2,18 @@ package binarysearch
 
 import kotlin.math.max
 
+/*
+    프로그래머스 징검다리
+    distance	rocks	n	return
+    25	[2, 14, 11, 21, 17]	2	4
+    바위 2개를 제거 했을 때 각 바위 거리들의 최소 값
+
+    n개를 빼기가 너무 애매했음,
+    그래서 얘도 최소 값을 binary 로 찾는 짓을 했음
+    최소 값을 정해놓고, element - previous가 mid보다 커지는 순간에만 rock을 제거 했음
+    rock count가 n보다 작아지는 순간에만 minMax에 최대 값을 넣어주었당.
+ */
+
 fun main() {
     println(solution(25, intArrayOf(2, 14, 11, 21, 17), 2))
 }
@@ -26,33 +38,7 @@ fun solution(distance: Int, rocks: IntArray, n: Int): Int {
             right = mid - 1
         }
     }
-    /*
-    val eachDistancePair = eachDistancePairReturn(sortRocks)
-    val minMax = eachDistancePair[n - 1]
-    eachDistancePair.take(n).forEach { sortRocks.removeAt(it.second) }
-    */
-    //eachDistanceMinValue(sortRocks)
     return minMax
-}
-
-fun eachDistancePairReturn(rocks: List<Int>): List<Pair<Int, Int>> {
-    var previous = 0
-    var temp = 0
-    return rocks.mapIndexed { index, element ->
-        temp = element - previous
-        previous = element
-        Pair(temp, index)
-    }.sortedBy { it.first }
-}
-
-fun eachDistanceMinValue(rocks: List<Int>): Int {
-    var previous = 0
-    var minValue = 1_000_000_000
-    rocks.forEach { element ->
-        minValue = minValue.coerceAtMost(element - previous)
-        previous = element
-    }
-    return minValue
 }
 
 /*

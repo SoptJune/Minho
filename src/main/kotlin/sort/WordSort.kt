@@ -2,7 +2,9 @@ package sort
 
 import java.io.BufferedReader
 import java.io.InputStreamReader
-
+/*
+    중복 제거, 정렬
+ */
 fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
     val N = readln().toInt()
     var array = mutableListOf<String>()

@@ -2,6 +2,16 @@ package graph
 
 import java.util.PriorityQueue
 
+/*
+    프로그래머스 디펜스 게임
+    PQ 풀이
+
+    무적권 쓰는거 최소로 하게 합시다.
+    계속 넣다가, pq size가 무적권보다 커질 때
+    pq에서 제일 enemy 적은걸 뺀다.
+    n이 0보다 작아질 때까지 반복
+    pq에 남아있는건 제일 큰 친구들일테니 무적권으로 막으면 된다.
+ */
 
 fun main() {
     println(solution(7, 3, intArrayOf(4, 2, 4, 5, 3, 3, 1)))

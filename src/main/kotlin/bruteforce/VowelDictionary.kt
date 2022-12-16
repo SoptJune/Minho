@@ -1,5 +1,12 @@
 package bruteforce
 
+/*
+    프로그래머스 모음 사전
+    구현 문제였던 것 같음 웬만하면 이런건 안 낼듯
+    모든 경우의 수와 점프할 수 있는 순간을 계산해서 구해야 함
+    그때 나눴을 때 뭐가 나오는지 체크할 수 있음
+ */
+
 private enum class Number(val select: Int) {
     A(0), E(1), I(2), O(3), U(4)
 }

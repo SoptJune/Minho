@@ -4,12 +4,16 @@ import java.util.LinkedList
 import java.util.Queue
 import kotlin.math.max
 import kotlin.math.min
+/*
+    백준 2206번 (벽 부수고 이동하기)
+    BFS 풀이 2차원 배열
+    벽을 하나 부시고 탐색, 끝까지 벽을 하나 부시고 탐색
+ */
 
-
-lateinit var answer: Array<Array<IntArray>>
-lateinit var tour: Array<Array<BooleanArray>>
-var endN = 0
-var endM = 0
+private lateinit var answer: Array<Array<IntArray>>
+private lateinit var tour: Array<Array<BooleanArray>>
+private var endN = 0
+private var endM = 0
 fun main() {
     val (N, M) = readln().split(' ').map { it.toInt() }
     endN = N

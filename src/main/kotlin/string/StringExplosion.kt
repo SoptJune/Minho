@@ -3,6 +3,11 @@ package string
 import java.io.BufferedWriter
 import java.io.OutputStreamWriter
 import java.util.Stack
+/*
+    백준 9935번 (문자열 폭발)
+    특정 폭발 문자 정해서 문자열에 적혀있으면 폭발하여 사라짐
+    남은 문자열에서도 폭발시킴
+ */
 
 fun main() {
     var str = readln()

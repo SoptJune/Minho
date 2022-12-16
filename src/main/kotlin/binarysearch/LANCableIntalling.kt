@@ -1,4 +1,13 @@
 package binarysearch
+/*
+    랜선 자르기 백준 1654번
+    K 랜던 갯수
+    N 최종 랜선 갯수
+    최대한 몇으로 잘라야 N에 충족하는 랜선의 길이가 나오는가?
+    입국 심사랑 개비슷함
+    특정 랜선 길이를 정해놓고, 각 값과 나누어 몇개 나오는지 센다.
+    right, left는 그에 따라서 수정
+ */
 
 fun main() {
     val (K, N) = readln().split(" ").map { it.toInt() }

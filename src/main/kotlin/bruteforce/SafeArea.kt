@@ -1,7 +1,14 @@
 package bruteforce
 
 import java.lang.Integer.max
-
+/*
+    백준 2468번 안전 영역
+    DFS 풀이 2차원 배열 상하좌우 이동
+    비가 계속 올 때 안 잠기는 지역의 최대 갯수를 찾는 것
+    비의 양이 1 ~ 건물 높이의 max까지 비를 오게 한다.
+    그때마다 안전 영역 체크, VisitMap 최신화한다.
+    visitMap false이면서 안 잠기는 영역에 대해서 DFS 돌림
+ */
 
 private val intRangeX = intArrayOf(0, 0, 1, -1)
 private val intRangeY = intArrayOf(1, -1, 0, 0)

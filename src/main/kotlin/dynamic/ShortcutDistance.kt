@@ -2,11 +2,15 @@ package dynamic
 
 import java.lang.Math.min
 
-var N = 0
-var D = 0
+/*
+    백준 14467번 (지름길)
+    DP문제, 이건 말로 설명하기가 어려움
+ */
+private var N = 0
+private var D = 0
 
-var visit = IntArray(0)
-var array = ArrayList<Triple<Int, Int, Int>>()
+private var visit = IntArray(0)
+private var array = ArrayList<Triple<Int, Int, Int>>()
 fun main() {
     val (tempN, tempD) = readln().split(" ").map { it.toInt() }
     N = tempN

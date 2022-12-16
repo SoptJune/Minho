@@ -3,16 +3,15 @@ package datastructure
 import java.io.BufferedWriter
 import java.io.OutputStreamWriter
 
+/*
+    백준 2346번 (풍선 터뜨리기)
+    원형 큐 이용
+    좌측으로 N이동, 우측으로 N 이동 해주는 과정 해야한다. -로 이동할 때 생각해줘야할 게 많음
+    특히 index 0을 지나는 -인 경우에는 잘 생각해줘야한다.
+ */
+
+
 data class Balloon(val moveIndex: Int, val index: Int)
-
-/*5
-3 2 1 -3 -1  (3 -> 1) index : 0, popIndex : 3
-2 1 -3 -1   (-3 -> 4) index : 2, popIndex : 3
-2 1 -1  (-1 -> 5) index : 2, 1
-2 1 (1 -> 3)
-2 (2 -> 2)
-
-*/
 
 val array = ArrayList<Balloon>()
 fun main() {
@@ -54,3 +53,12 @@ fun getPopIndex(index: Int, currentIndex: Int): Int {
         }
     }
 }
+
+/*5
+3 2 1 -3 -1  (3 -> 1) index : 0, popIndex : 3
+2 1 -3 -1   (-3 -> 4) index : 2, popIndex : 3
+2 1 -1  (-1 -> 5) index : 2, 1
+2 1 (1 -> 3)
+2 (2 -> 2)
+
+*/

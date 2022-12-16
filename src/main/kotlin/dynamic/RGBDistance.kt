@@ -2,7 +2,9 @@ package dynamic
 
 import kotlin.math.min
 /*
-    백준 RGB거리 (실버 1)
+    백준 1149번 (RGB거리)
+    얘도 DP인데 1, 2, 3이랑 비슷하다
+    각각의 경우를 다 계산 때려 놓는다. 그랬을 때 min을 뽑아내면 된다.
  */
 
 fun main() {

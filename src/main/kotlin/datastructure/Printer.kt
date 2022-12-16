@@ -1,4 +1,15 @@
-package binarysearch
+package datastructure
+
+/*
+    프로그래머스 프린터
+    이건 큐인데?
+    원형 큐로 해결
+    현재 리스트에서 제일 큰 놈이 본인인 경우에만 remove
+    Target 출력하고 끝
+
+    priorities	location	return
+    [2, 1, 3, 2]	2	     1
+ */
 
 fun main() {
     println(solution(intArrayOf(2, 1, 3, 2), 2))

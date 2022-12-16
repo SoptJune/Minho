@@ -1,7 +1,14 @@
 package dynamic
 
 import kotlin.math.min
-
+/*
+    프로그래머스 코딩 테스트 공부
+    DP 풀이, 이차원 배열로 풀이
+    최대 알고력 X 최대 코딩력 의 2차원 배열 만든다.
+    1씩 늘릴 때랑, 문제 풀이 할 때랑 비교,
+    문제 풀 수 있는게 있을 때는 문제만 품, 1씩 늘리는걸로 해둠
+    DP는 내지마라 제발..
+ */
 fun main() {
     /*println("Solution  ${solution(10, 10, arrayOf(intArrayOf(10, 15, 2, 1, 2), intArrayOf(20, 20, 3, 3, 4)))}")*/
     println(

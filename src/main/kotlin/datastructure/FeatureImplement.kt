@@ -1,6 +1,13 @@
 package datastructure
 
 import java.util.*
+/*
+    프로그래머스 기능개발
+    queue 처리
+    일단 냅다 다 넣어두고 맨 앞이 처리되는 순간 나머지도 처리 되나 확인한당,
+    그때 처리되는 개수를 기록
+
+ */
 
 val queue = LinkedList<Pair<Int, Int>>()
 fun main() {

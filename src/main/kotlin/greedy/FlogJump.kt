@@ -1,5 +1,7 @@
 package greedy
-
+/*
+    Leet Code 개구리 점프
+ */
 fun main() {
     println(solution(10, 85, 30))
 }

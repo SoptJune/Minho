@@ -3,10 +3,14 @@ package datastructure
 import java.io.BufferedWriter
 import java.io.OutputStreamWriter
 
-val n = readln().toInt()
-val arrayStack = ArrayList<Int>()
-val arrayASC = ArrayList<Int>()
-val str = StringBuilder()
+/*
+    뭔지 모르겠음 문제를 못 찾음
+ */
+
+private val n = readln().toInt()
+private val arrayStack = ArrayList<Int>()
+private val arrayASC = ArrayList<Int>()
+private val str = StringBuilder()
 fun main() {
     val bw = BufferedWriter(OutputStreamWriter(System.out))
     repeat(n) {
@@ -28,7 +32,7 @@ fun main() {
     bw.close()
 }
 
-fun upStreamCheck() {
+private fun upStreamCheck() {
     for (i in arrayASC.lastIndex downTo 0) {
         if (arrayASC[i] == arrayStack.first()) {
             arrayStack.removeFirstOrNull()

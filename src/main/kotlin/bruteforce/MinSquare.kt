@@ -1,5 +1,10 @@
 package bruteforce
 
+/*
+    프로그래머스 최소 직사각형
+    뭐 없음
+ */
+
 import java.lang.Integer.max
 
 private var maxOfMax = 0

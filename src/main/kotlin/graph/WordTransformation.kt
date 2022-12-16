@@ -1,11 +1,16 @@
 package graph
 
 import kotlin.math.min
+/*
+    프로그래머스 단어 변환
+    DFS 풀이, 1차원 배열
+    단어 1개만 다른 문자열들을 추출하고, 걔네들로 dfs 서치
+ */
 
-var wordList: Array<String> = arrayOf()
-var targetString = ""
-var wordTour: BooleanArray = booleanArrayOf()
-var maxCount = 0
+private var wordList: Array<String> = arrayOf()
+private var targetString = ""
+private var wordTour: BooleanArray = booleanArrayOf()
+private var maxCount = 0
 fun main() {
     //println(("hot".filtering(arrayOf("hot", "dot", "dog", "lot", "log", "cog"))))
     println(solution("hit", "cog", arrayOf("hot", "dot", "dog", "lot", "log", "cog")))

@@ -1,9 +1,15 @@
 package graph
 
-val intRangeX = intArrayOf(0, 0, 1, -1)
-val intRangeY = intArrayOf(1, -1, 0, 0)
-val ans = mutableSetOf<String>()
-val map = ArrayList<List<String>>()
+/*
+    백준 2210번 (숫자판 점프)
+    visit map 없이 그냥 다 보내는 것이다.
+ */
+
+
+private val intRangeX = intArrayOf(0, 0, 1, -1)
+private val intRangeY = intArrayOf(1, -1, 0, 0)
+private val ans = mutableSetOf<String>()
+private val map = ArrayList<List<String>>()
 
 fun main() {
     repeat(5) {
@@ -18,7 +24,7 @@ fun main() {
     print(ans.size)
 }
 
-fun searchSixDigits(count: Int, str: String, point: Pair<Int, Int>) {
+private fun searchSixDigits(count: Int, str: String, point: Pair<Int, Int>) {
     if (count == 6) {
         ans.add(str)
         return

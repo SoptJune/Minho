@@ -2,6 +2,12 @@ package math
 
 import java.io.BufferedWriter
 import java.io.OutputStreamWriter
+/*
+    백준 9375번 (패션왕 신해빈)
+    구현 풀이
+    HashMap 사용
+    종류들을 ++ 해놓고 곱셈으로 푼다.
+ */
 
 fun main() {
     val case = readln().toInt()

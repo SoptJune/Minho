@@ -1,5 +1,13 @@
 package dynamic
 
+/*
+    백준 15988번 ( 1, 2, 3 더하기 3)
+    DP인데 괄호랑 비슷해서 그대로 풀려다가 실패
+    정수 n이 주어졌을 때, n을 1, 2, 3의 합으로 나타내는
+    방법의 수를 구하는 프로그램을 작성하시오.
+    해당 수의 index를 1, 2, 3을 뺀 곳과 비교한다.
+ */
+
 fun main() {
     val N = readln().toInt()
     val array = mutableListOf<Int>()
