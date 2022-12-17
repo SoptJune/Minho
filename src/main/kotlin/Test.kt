@@ -27,6 +27,7 @@ class Test {
 
     private val intRangeX = intArrayOf(0, 0, 1, -1)
     private val intRangeY = intArrayOf(1, -1, 0, 0)
+    private lateinit var unionFind: IntArray
 
     private fun DFSSearch(currentX: Int, currentY: Int, level: Int) {
 
@@ -40,4 +41,26 @@ class Test {
             }
         }
     }
+
+
+    private fun findParent(island: Int): Int {
+        if (unionFind[island] == island) {
+            return island
+        } else {
+            return findParent(unionFind[island])
+        }
+    }
+
+    private fun unionCombine(first: Int, second: Int) {
+        val node1 = findParent(first)
+        val node2 = findParent(second)
+        if (node1 < node2) {
+            unionFind[node2] = node1
+        } else {
+            unionFind[node1] = node2
+        }
+    }
+    private fun isParentSame(first: Int, second: Int) = findParent(first) == findParent(second)
+
+
 }

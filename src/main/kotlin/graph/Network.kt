@@ -33,7 +33,7 @@ private fun solution(n: Int, computers: Array<IntArray>): Int {
     return answer
 }
 
-fun dfs(index: Int) {
+private fun dfs(index: Int) {
     networkMap[index] = true
     for (i in 1 until network.size) {
         if (index != i && network[index][i] == 1 && !networkMap[i]) {
