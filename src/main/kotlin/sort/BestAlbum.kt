@@ -9,7 +9,7 @@ fun main() {
     solution(arrayOf("classic", "pop", "classic", "classic", "pop"), intArrayOf(500, 600, 150, 800, 2500))
 }
 
-fun solution(genres: Array<String>, plays: IntArray): IntArray {
+private fun solution(genres: Array<String>, plays: IntArray): IntArray {
     val pairAlbum = ArrayList<Triple<String, Int, Int>>()
     for (i in genres.indices) {
         pairAlbum.add(Triple(genres[i], plays[i], i))

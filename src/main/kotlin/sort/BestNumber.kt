@@ -4,7 +4,7 @@ fun main() {
     println(solution(intArrayOf(3, 30, 34, 5, 9)))
 }
 
-fun solution(numbers: IntArray): String {
+private fun solution(numbers: IntArray): String {
     val comparator = Comparator<String> { o1, o2 ->
         (o2 + o1).compareTo(o1 + o2)
     }
