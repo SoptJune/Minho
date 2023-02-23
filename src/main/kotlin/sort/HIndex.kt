@@ -1,13 +1,13 @@
 package sort
 
 fun main() {
-    println(solution(intArrayOf(1)))
-    println(solution(intArrayOf(0, 1, 4)))
-    println(solution(intArrayOf(3, 0, 6, 1, 5)))
-    println(solution(intArrayOf(12, 11, 10, 9, 8, 1)))
+    println(solution2(intArrayOf(1)))
+    println(solution2(intArrayOf(0, 1, 4)))
+    println(solution2(intArrayOf(3, 0, 6, 1, 5)))
+    println(solution2(intArrayOf(12, 11, 10, 9, 8, 1)))
 }
 //1, 8, 9, 10, 11, 12
-private fun solution(citations: IntArray): Int {
+private fun solution2(citations: IntArray): Int {
     citations.sortDescending() //내림차순 정렬
     if(citations.last() > citations.size){ //제일 작은 인용수가 배열의 길이보다 클 때는
         return citations.size //배열 길이 리턴
