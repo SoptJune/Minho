@@ -1,9 +1,9 @@
 package graph
 
-val intRangeX = intArrayOf(0, 0, 1, -1)
-val intRangeY = intArrayOf(1, -1, 0, 0)
-val ans = mutableSetOf<String>()
-val map = ArrayList<List<String>>()
+private val intRangeX = intArrayOf(0, 0, 1, -1)
+private val intRangeY = intArrayOf(1, -1, 0, 0)
+private val ans = mutableSetOf<String>()
+private val map = ArrayList<List<String>>()
 
 fun main() {
     repeat(5) {
