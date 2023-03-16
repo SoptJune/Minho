@@ -1,5 +1,11 @@
 package graph
 
+/*
+    프로그래머스 네트워크
+    DFS 풀이
+    네트워크 몇개인지 물어보는 것
+ */
+
 private lateinit var networkMap: BooleanArray
 private lateinit var network: Array<IntArray>
 fun main() {
@@ -27,7 +33,7 @@ private fun solution(n: Int, computers: Array<IntArray>): Int {
     return answer
 }
 
-fun dfs(index: Int) {
+private fun dfs(index: Int) {
     networkMap[index] = true
     for (i in 1 until network.size) {
         if (index != i && network[index][i] == 1 && !networkMap[i]) {
@@ -35,53 +41,6 @@ fun dfs(index: Int) {
         }
     }
 }
-
-/*
-
-fun solution(n: Int, computers: Array<IntArray>): Int {
-    for (i in 1..n) {
-        networkGraph[i] = LinkedList<Int>()
-    }
-    var networkCount = 0
-
-    val data = computers.mapIndexed { targetIndex, computer ->
-        computer[targetIndex] = 0
-        computer.mapIndexed { destinationIndex, peer ->
-            if (peer == 1) {
-                computers[destinationIndex][targetIndex] = 0
-                Pair(targetIndex, destinationIndex)
-            } else null
-        }.filterNotNull()
-    }.flatten()
-    data.forEach { pair ->
-        val (targetValue, destinationValue) = pair
-        networkGraph[targetValue + 1]?.add(destinationValue + 1)
-    }
-
-    for (i in 1..n) {
-        isSpanning = false
-        if (!networkVertex[i]) {
-            networkVertex[i] = true
-            networkDFS(i, 0)
-            if (!isSpanning) {
-                networkCount++
-            }
-        }
-    }
-    return if (networkCount == 0) 1 else networkCount
-}
-
-fun networkDFS(cur: Int, pre: Int) {
-    for (i in networkGraph[cur]!!) {
-        if (networkVertex[i]) {
-            isSpanning = true
-        } else {
-            networkVertex[i] = true
-            networkDFS(i, cur)
-        }
-    }
-}
-*/
 
 /*
 

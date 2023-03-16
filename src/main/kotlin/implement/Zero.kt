@@ -2,6 +2,11 @@ package implement
 
 import java.io.BufferedReader
 import java.io.InputStreamReader
+/*
+    백준 10773번 (제로)
+    Stack
+    뭐 없음 스택
+ */
 
 fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
     val data = readLine().toInt()

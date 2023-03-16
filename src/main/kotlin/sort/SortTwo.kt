@@ -2,6 +2,9 @@ package sort
 
 import java.io.BufferedWriter
 import java.io.OutputStreamWriter
+/*
+    Merge Sort 미완
+ */
 
 fun main() {
     val bw = BufferedWriter(OutputStreamWriter(System.out))
