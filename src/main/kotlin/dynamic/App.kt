@@ -15,7 +15,7 @@ fun main() {
     val needMemory = M - appSpec.filter { it.second == 0 }.sumOf { pair ->
         pair.first
     }
-    if (needMemory < 0) {
+    if (needMemory <= 0) {
         println(0)
         return
     }
