@@ -4,14 +4,14 @@ import java.io.BufferedWriter
 import java.io.OutputStreamWriter
 import kotlin.system.exitProcess
 
-val Num = readln().toInt()
-val myArray = Array(Num) {
+private val Num = readln().toInt()
+private val myArray = Array(Num) {
     readln().split(" ").map { it.toInt() }.filterIndexed { index, i -> index != 0 }
 }
 private val myTour = Array(Num) {
     BooleanArray(10)
 }
-val bw = BufferedWriter(OutputStreamWriter(System.out))
+private val bw = BufferedWriter(OutputStreamWriter(System.out))
 fun main() {
 
     if (myArray.size == 1) {
@@ -23,7 +23,7 @@ fun main() {
     bw.close()
 }
 
-fun search(travelMap: String, depth: Int, select:Int) {
+private fun search(travelMap: String, depth: Int, select:Int) {
     if (depth == Num) {
         bw.write(travelMap)
         bw.close()
